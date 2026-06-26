@@ -105,3 +105,21 @@ reflex/
 ## License
 
 [Apache 2.0](LICENSE)
+
+## Citation
+
+The accompanying paper is included in this repository: [paper.pdf](paper.pdf).
+
+If you find Reflex useful in your research, please cite:
+
+```bibtex
+@inproceedings{guo2026reflex,
+  title     = {Reflex: Real-Time Vision-Language-Action Control through Streaming Inference},
+  author    = {Guo, Yuanchun and Liu, Bingyan},
+  booktitle = {Proceedings of the 43rd International Conference on Machine Learning (ICML)},
+  series    = {Proceedings of Machine Learning Research},
+  volume    = {306},
+  year      = {2026}
+}
+```
+
