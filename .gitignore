@@ -1,0 +1,31 @@
+# Byte-compiled / optimized
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.eggs/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Model checkpoints / training & eval artifacts (not part of the release)
+outputs/
+checkpoints/
+*.ckpt
+*.safetensors
+*.pt
+*.pth
+
+# Logs and result dumps
+*.log
+eval_*.json
+*_results*.json
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+*.swp

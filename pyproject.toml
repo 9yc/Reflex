@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "reflex-vla"
+version = "0.1.0"
+description = "Reflex: Real-Time Streaming Inference for Flow-Matching Vision-Language-Action Policies."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "Apache-2.0"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+
+dependencies = [
+    "lerobot[feetech,smolvla]==0.4.1",
+    "transformers @ git+https://github.com/huggingface/transformers.git@dcddb970176382c0fcf4521b0c0e6fc15894dfe0",
+    "triton>=2.1.0",
+]
+
+[project.optional-dependencies]
+# Optional robot backends not required for streaming inference itself.
+reachy = ["reachy2_sdk"]
+
+[project.urls]
+Homepage = "https://github.com/9yc/Reflex"
+Repository = "https://github.com/9yc/Reflex"
+
+[project.scripts]
+reflex = "reflex.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["reflex*"]
